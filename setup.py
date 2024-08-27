@@ -41,7 +41,7 @@ CURDIR = dirname(abspath(__file__))
 # execfile(join(CURDIR, 'AristaLibrary', 'version.py'))
 filename = join(CURDIR, 'AristaLibrary', 'version.py')
 print(filename)
-import filename
+exec(compile(open(filename).read(), filename, 'exec'))
 with open(join(CURDIR, 'README.rst')) as readme:
     README = readme.read()
 
