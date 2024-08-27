@@ -38,7 +38,10 @@ from os.path import abspath, dirname, join
 CURDIR = dirname(abspath(__file__))
 
 #from AristaLibrary import __version__, __author__
-execfile(join(CURDIR, 'AristaLibrary', 'version.py'))
+# execfile(join(CURDIR, 'AristaLibrary', 'version.py'))
+filename = join(CURDIR, 'AristaLibrary', 'version.py')
+print(filename)
+import filename
 with open(join(CURDIR, 'README.rst')) as readme:
     README = readme.read()
 
